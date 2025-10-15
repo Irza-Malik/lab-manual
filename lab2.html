@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+        text-align: center;
+    }
+    body{
+        background-color: burlywood;
+    }
+    .container{
+        border: solid green 2px;
+        width: 90%;
+        height: 80%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-self: center;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    } 
+    .item{
+        background-color: skyblue;
+    }
+    .left{
+        align-self: self-end;
+    }
+    @media screen and (max-width:768px) {
+        body{
+            background-color: aquamarine;
+        }  
+    }
+    .mobile{
+        display: none;
+    }
+    @media screen and (min-width:500px) {
+        .mobile{
+            display: block;
+        } 
+    }
+       
+</style>
+<body>
+    <header>
+        <h1 style="color: blue;">Web Technologies Handout</h1>
+        <h2>Course: CSS-366(2+1)</h2>
+        <h3>Semester Fall 2025</h3>
+        <h5>NAME:<u>IRZA MALIK</u> | Registration ID <u>FA22-BCE-084</u></h5>
+    </header>
+    <p>Following are the list of experiments:</p>
+        <ol class="container mobile">
+            <li class="item"><a href="\index.html">Experiment1:introduction to HTML basics</a></li>
+            <li class="item"><a href="\lab2.html">Experiment2:online manual(this page itself)</a></li>
+            <li class="item left"><a href="\lab3+4.html">Experiment 3:Working with Tables,Lists, Images, and <br> Experiment 4:Hyperlinks and Applying CSS to HTML
+                (Inline, Internal, and External Styles)</a></li>
+            <li class="item left"><a href="\lab3+4.html">Experiment5: Exploring CSS Selectors</a></li>
+        </ol>
+</body>
+</html>
