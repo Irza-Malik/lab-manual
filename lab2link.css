@@ -1,0 +1,22 @@
+.lab-link {
+  position: fixed;
+  top: 2px;
+  right: 2px;
+  background-color: rgba(255, 255, 255, 0.1); /* semi-transparent white */
+  padding: 1px;
+  border-radius: 16px;
+  z-index: 1000; /* ensures it stays on top */
+  transition: background-color 0.3s ease;
+}
+
+.lab-link:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.lab-link a {
+  text-decoration: none;
+  color: #31326F; /* matches your theme */
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration-line: underline;
+}
