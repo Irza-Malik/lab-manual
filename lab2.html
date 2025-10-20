@@ -6,60 +6,142 @@
     <title>Document</title>
 </head>
 <style>
-    header{
-        text-align: center;
+    :root {
+        --white:#FCF9EA;
+        --blue: #BADFDB;
+        --rose: #FFA4A4;
+        --baby: #FFBDBD;
     }
     body{
-        background-color: burlywood;
+        background-color: var(--white);
+        margin: 0px;
+        padding: 0px;
+    }
+    header{
+        text-align: center;
+        background-color: var(--blue);
+        padding: 20px;
+        border-bottom: var(--baby) solid 2px;
     }
     .container{
-        border: solid green 2px;
-        width: 90%;
+        background-color: var(--blue);
+        color: #000;
+        border-radius: 12px;
+        width: 85%;
         height: 80%;
-        padding: 50px;
+        margin: 10px auto;
+        padding: 30px;
         display: flex;
         flex-direction: column;
         align-content: center;
         align-self: center;
         gap: 20px;
-        align-items: center;
+        align-items: stretch;
         justify-content: center;
     } 
     .item{
-        background-color: skyblue;
+        background-color: var(--baby);
+        color:#000;
+        padding: 10px;   
+        border-radius: 8px;
+        transition: background-color 0.3s ease;     
     }
-    .left{
-        align-self: self-end;
+     .item:hover {
+      background-color:var(--white);
+    }
+    .description {
+      background-color: var(--rose);
+      color: #333;
+      padding: 10px 15px;
+      margin-top: 10px;
+      border-left: 4px solid var(--rose);
+      border-radius: 6px;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+    .description:hover{
+        background-color: var(--rose);
+    }
+    a{
+        color:#000;
     }
     @media screen and (max-width:768px) {
         body{
-            background-color: aquamarine;
+            background-color: var(--white);
         }  
     }
-    .mobile{
-        display: none;
-    }
-    @media screen and (min-width:500px) {
-        .mobile{
+    @media screen and (max-width:500px) {
+        header h1,
+        header h2,
+        header h3,
+        .description,
+        p {
+            display: none;
+        }
+        header h5 {
             display: block;
+        }
+        .mobile{
+            display:flex;
         } 
     }
        
 </style>
 <body>
     <header>
-        <h1 style="color: blue;">Web Technologies Handout</h1>
+        <h1 style="color: var(--rose);">Web Technologies Handout</h1>
         <h2>Course: CSS-366(2+1)</h2>
         <h3>Semester Fall 2025</h3>
-        <h5>NAME:<u>IRZA MALIK</u> | Registration ID <u>FA22-BCE-084</u></h5>
+        <h5 class="name">NAME:<u>IRZA MALIK</u> | Registration ID <u>FA22-BCE-084</u></h5>
     </header>
-    <p>Following are the list of experiments:</p>
+    <p style="text-align:center;">Following are the list of experiments:</p>
         <ol class="container mobile">
-            <li class="item"><a href="\index.html">Experiment1:introduction to HTML basics</a></li>
-            <li class="item"><a href="\lab2.html">Experiment2:online manual(this page itself)</a></li>
-            <li class="item left"><a href="\lab3+4.html">Experiment 3:Working with Tables,Lists, Images, and <br> Experiment 4:Hyperlinks and Applying CSS to HTML
-                (Inline, Internal, and External Styles)</a></li>
-            <li class="item left"><a href="\lab3+4.html">Experiment5: Exploring CSS Selectors</a></li>
+            <li class="item">
+                <a href="\index.html">Experiment1:introduction to HTML basics</a>
+                <div class="description">
+                    This experiment introduces the basic structure of HTML and marks the 
+                    beginning of my web development journey. The page serves as my personal portfolio, 
+                    showcasing my academic background, projects, and skills. It is designed to be a 
+                    foundation for my future online presence and can be included in my CV or job applications. 
+                    As I continue learning, I plan to enhance it further using CSS and JavaScript to create an 
+                    interactive and professional web profile
+                </div>
+            </li>
+            <li class="item">
+                <a href="\lab2.html">Experiment2:online manual(this page itself)</a>
+                <div class="description">
+                    This experiment acts as an online manual that provides links to all my lab experiments 
+                    along with their individual descriptions and reflections. It also represents Lab 6,
+                    where I implemented responsive and interactive behavior for mobile screens. The page 
+                    demonstrates how layouts and designs can adapt to different devices while maintaining 
+                    an organized overview of my web development progress.
+                </div>
+            </li>
+            <li class="item left">
+                <a href="\lab3+4.html">Experiment 3:Working with Tables,Lists, Images, and <br> Experiment 4:Hyperlinks and Applying CSS to HTML
+                (Inline, Internal, and External Styles)</a>
+                <div class="description">
+                    Experiments 3 and 4 focus on creating structured web pages using tables, lists, 
+                    and images to showcase my academic profile, including the subjects I have studied 
+                    and additional courses I have completed. These experiments also explore hyperlinks 
+                    and the application of CSS through inline, internal, and external styles. Together, 
+                    they form the foundation of my personal portfolio project by helping me organize 
+                    information effectively and present it in a visually appealing, professional 
+                    way—an essential skill for developing my complete online portfolio.
+                </div>
+            </li>
+            <li class="item left">
+                <a href="\lab5.html">Experiment5: Exploring CSS Selectors</a>
+                <div class="description">
+                    In this experiment, I designed a web page to display my projects while exploring 
+                    and applying different CSS selectors to meet the objectives of Lab 5. Various 
+                    selectors were used to style specific elements and improve the overall layout and 
+                    presentation. Although the projects section is still under development, this lab 
+                    lays the groundwork for showcasing my work effectively, with plans to enhance the
+                    design and content further to create a complete and visually appealing portfolio 
+                    section.
+                </div>
+            </li>
         </ol>
 </body>
 </html>
