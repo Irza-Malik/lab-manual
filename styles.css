@@ -5,6 +5,7 @@ body {
 header h1 {
   color: purple;
   margin: 10px 0;
+  padding: 20px;
 }
 
 header h3 {
@@ -25,4 +26,9 @@ header h3 {
   border: none;
   margin: 15px auto;
   width: 80%;
+}
+div{
+  background-color:lightgray;
+  color:olive;
+  width: 100%;
 }
