@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+    transition: background 0.5s ease;
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+    background: pink;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px hsla(274, 38%, 50%, 0.712);
+}
+h1, h2, p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: gray;
+    color: rgb(154, 25, 68);
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.btn:hover {
+    transform: scale(1.05);
+    opacity: 0.5;
+}
+
+.btn-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.correct {
+    background: #28a745 !important;
+}
+
+.wrong {
+    background: #dc3545 !important;
+}
+
+#feedback {
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: top 30px; ;
+    
+}
+
+#progress-container {
+    width: 100%;
+    background: #eee;
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #160628;
+    border-radius: 5px;
+    transition: width 0.4s ease;
+}
+
+.correct-bg {
+    background-image: url("lavender.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrong-bg {
+    background: #ffe5e5;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150'><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='100'>❌</text></svg>");
+    background-size: 150px 150px;
+    background-repeat: repeat;
+    opacity: 0.8;
+}

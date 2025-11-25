@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irza's Personal Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="container">
+        <div id="start-screen">
+            <h1>Very Important Quiz ✨</h1>
+            <button id="start-btn" class="btn">Start Quiz</button>
+        </div>
+        <div id="quiz-screen" class="hide">
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+
+            <h2 id="question"></h2>
+
+            <div id="answer-buttons" class="btn-grid"></div>
+
+            <div id="feedback"></div>
+
+            <button id="next-btn" class="btn hide">Next</button>
+        </div>
+        <div id="result-screen" class="hide">
+            <h1>Your Score:</h1>
+            <h2 id="score"></h2>
+            <p id="final-message"></p>
+            <button id="restart-btn" class="btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
